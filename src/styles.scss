@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pokemon Solid", sans-serif;
+    color: #ffde00;
+    text-shadow: 2px 3px #3b4cca;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #0007;
+    height: 100vh;
+    background: rgb(56, 182, 255);
+    background: radial-gradient(circle, rgba(56, 182, 255, 1) 0%, rgba(0, 74, 173, 1) 100%, rgba(0, 74, 173, 1) 100%);
+}
+
+fieldset {
+    border-radius: 8px;
+    padding: 16px;
+
+    legend {
+        font-family:
+            Roboto,
+            system-ui,
+            -apple-system,
+            "Segoe UI",
+            sans-serif;
+        text-shadow: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 8px;
+    }
+
+    .field {
+        border-color: #673ab7;
+        border-radius: 7px;
+        &__title {
+            color: #673ab7;
+        }
+    }
+    .insured {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+input {
+    min-height: 56px;
+    padding: 16px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+    border-color: rgba(0, 0, 0, 0.3);
+
+    &:active {
+        border-color: #673ab7;
+        outline-color: #673ab7;
+    }
+    &:focus {
+        border-color: #673ab7;
+        outline-color: #673ab7;
+    }
+}
+
+button {
+    background-color: #cc0000;
+    border-radius: 8px;
+    color: #ffde00;
+    text-shadow: 2px 3px #3b4cca;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #0007;
+    border: none;
+    min-height: 56px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Pokemon Solid", sans-serif;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    padding-bottom: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #cc0000d6;
+    }
+}

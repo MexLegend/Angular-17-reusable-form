@@ -1,0 +1,15 @@
+@if (formGroup) {
+<fieldset class="field" [formGroup]="formGroup">
+  <legend class="field__title">{{ title }}</legend>
+
+  <section class="insured">
+    <div class="">
+      <input type="text" placeholder="Nombres" formControlName="names" />
+    </div>
+    <div>
+      <input type="text" placeholder="Apellidos" formControlName="lastName" />
+    </div>
+  </section>
+</fieldset>
+
+}

@@ -1,0 +1,19 @@
+<form class="form" [formGroup]="formGroup" (ngSubmit)="saveData()">
+  <input
+    type="text"
+    placeholder="Enter your trainer nickname"
+    formControlName="nickname"
+  />
+  <input type="email" placeholder="Enter your email" formControlName="email" />
+  <input
+    type="number"
+    placeholder="Enter your phone number"
+    min="1"
+    formControlName="phone"
+  />
+  <app-person-data title="Nombre completo:" controlKey="name" />
+  <app-address-data title="Dirección:" controlKey="address" />
+  <button type="submit">
+    <span>Guardar</span>
+  </button>
+</form>

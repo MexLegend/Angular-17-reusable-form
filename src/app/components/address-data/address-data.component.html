@@ -1,0 +1,12 @@
+@if (formGroup) {
+<fieldset class="field" [formGroup]="formGroup">
+  <legend class="field__title">{{ title }}</legend>
+
+  <section class="insured">
+    <input type="text" placeholder="Calle" formControlName="street" />
+    <input type="text" placeholder="Ciudad" formControlName="city" />
+    <input type="text" placeholder="Código Postal" formControlName="zipcode" />
+  </section>
+</fieldset>
+
+}

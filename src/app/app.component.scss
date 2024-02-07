@@ -1,0 +1,18 @@
+.global-container {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "content";
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+app-nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+    align-items: center;
+    padding: 30px 28px;
+}
